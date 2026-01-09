@@ -1,8 +1,8 @@
-package br.com.jumpark.jumppark.feature.mainscreen
+package br.com.jumpark.jumppark.feature.mainscreen.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import br.com.jumpark.jumppark.feature.data.ParkingRepository
+import br.com.jumpark.jumppark.feature.mainscreen.data.ParkingRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch

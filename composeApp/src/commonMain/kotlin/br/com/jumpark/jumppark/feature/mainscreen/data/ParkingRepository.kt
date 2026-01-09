@@ -1,4 +1,4 @@
-package br.com.jumpark.jumppark.feature.data
+package br.com.jumpark.jumppark.feature.mainscreen.data
 
 import kotlinx.coroutines.delay
 
