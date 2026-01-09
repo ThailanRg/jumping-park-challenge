@@ -1,4 +1,4 @@
-package br.com.jumpark.jumppark
+package br.com.jumpark.jumppark.feature.app.ui
 
 class Greeting {
     private val platform = getPlatform()

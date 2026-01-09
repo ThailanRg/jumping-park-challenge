@@ -1,4 +1,4 @@
-package br.com.jumpark.jumppark
+package br.com.jumpark.jumppark.feature.app.ui
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
