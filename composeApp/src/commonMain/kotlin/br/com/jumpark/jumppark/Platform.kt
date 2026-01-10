@@ -1,4 +1,4 @@
-package br.com.jumpark.jumppark.feature.app.ui
+package br.com.jumpark.jumppark
 
 interface Platform {
     val name: String
