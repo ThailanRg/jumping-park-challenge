@@ -87,7 +87,6 @@ Criar uma aplicação multiplataforma moderna, escalável e organizada, que demo
 * ✅ Android
 * ✅ Desktop (JVM)
 
-> A arquitetura permite expansão futura para Web e iOS.
 
 ---
 
