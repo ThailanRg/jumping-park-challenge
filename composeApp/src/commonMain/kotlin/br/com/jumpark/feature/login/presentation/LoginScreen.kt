@@ -59,11 +59,6 @@ fun LoginScreen() {
             modifier = Modifier.fillMaxWidth(),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Icon(
-                imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                contentDescription = null,
-                tint = Color.White
-            )
             Spacer(modifier = Modifier.weight(1f))
             Text(
                 text = "Login",
@@ -157,16 +152,7 @@ fun LoginScreen() {
             )
         )
 
-        Spacer(modifier = Modifier.height(8.dp))
-
-        Text(
-            text = "Forgot password?",
-            color = Color(0xFF1EEA6E),
-            fontSize = 12.sp,
-            modifier = Modifier.align(Alignment.End)
-        )
-
-        Spacer(modifier = Modifier.height(24.dp))
+        Spacer(modifier = Modifier.height(16.dp))
 
         Button(
             onClick = { },
