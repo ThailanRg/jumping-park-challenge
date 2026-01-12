@@ -63,21 +63,6 @@ Criar uma aplicação multiplataforma moderna, escalável e organizada, que demo
   * Debit
 * Processamento do checkout
 
----
-
-## 🏗️ Arquitetura
-
-O projeto segue uma abordagem **multiplataforma real**, com separação clara entre UI, regras de negócio e plataforma.
-
-### Estrutura de módulos
-
-```
-jumppark/
- ├── shared/        # Código compartilhado (UI, navegação, lógica)
- ├── androidApp/    # Entry point Android
- └── desktopApp/    # Entry point Desktop
-```
-
 ### Principais conceitos
 
 * **Compose Multiplatform** para UI
