@@ -24,9 +24,9 @@ fun App() {
         val navController = rememberNavController()
         NavHost(navController, startDestination = LoginRoute) {
             composable<LoginRoute> { LoginScreen() }
-            composable<VehicleEntryRoute> { VehicleEntryScreen() }
             composable<MainScreenRoute> { MainScreen() }
             composable<VehicleDetailsRoute> { VehicleDetailsScreen() }
+            composable<VehicleEntryRoute> { VehicleEntryScreen() }
             composable<YardVehicleListRoute> { YardVehicleListScreen() }
         }
     }
