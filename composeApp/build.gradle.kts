@@ -23,6 +23,8 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.koin.android)
+            implementation(libs.koin.androidx.compose)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -37,6 +39,9 @@ kotlin {
             implementation(libs.jetbrains.material.icons.extended)
             implementation(libs.navigation.compose)
             implementation(libs.kotlinx.serialization.json)
+            api(libs.koin.core)
+            implementation(libs.koin.compose)
+            implementation(libs.koin.compose.viewmodel)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -49,11 +54,11 @@ kotlin {
 }
 
 android {
-    namespace = "br.com.jumpark.jumppark"
+    namespace = "br.com.jumpark"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
-        applicationId = "br.com.jumpark.jumppark"
+        applicationId = "br.com.jumpark"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
         versionCode = 1
@@ -81,11 +86,11 @@ dependencies {
 
 compose.desktop {
     application {
-        mainClass = "br.com.jumpark.jumppark.MainKt"
+        mainClass = "br.com.jumpark.MainKt"
 
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "br.com.jumpark.jumppark"
+            packageName = "br.com.jumpark"
             packageVersion = "1.0.0"
         }
     }
