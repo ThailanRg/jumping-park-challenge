@@ -18,6 +18,7 @@ kotlin {
     }
 
     jvm()
+    val ktor_version: String by project
 
     sourceSets {
         androidMain.dependencies {
@@ -42,6 +43,8 @@ kotlin {
             api(libs.koin.core)
             implementation(libs.koin.compose)
             implementation(libs.koin.compose.viewmodel)
+            implementation("io.ktor:ktor-client-core:${ktor_version}")
+            implementation("io.ktor:ktor-client-cio:${ktor_version}")
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
@@ -54,7 +57,7 @@ kotlin {
 }
 
 android {
-    namespace = "br.com.jumpark"
+    namespace = "br.com.jumppark"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
